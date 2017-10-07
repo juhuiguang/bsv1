@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+<script type="text/javascript" src="js/baseInterface.js"></script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<button id="clickBtn">登陆</button>
+	<button id="clickUserBtn">用户管理</button>
+	<button id="clickInfoBtn">消息</button>
+	<button id="clickPwdBtn">修改密码</button>
+</body>
+</html>
+<script>
+	$(function(){
+		
+		$('#clickBtn').unbind('click').click(function(){
+			new $.getJSP({
+				type:"location",
+				config:{
+					fromurl:"testLogin.html",
+					tourl:"login.jsp"
+				}
+			});		
+		});
+		$('#clickUserBtn').unbind('click').click(function(){
+			new $.getJSP({
+				type:"open",
+				config:{
+					fromurl:"testLogin.html",
+					tourl:"userManage.jsp" 
+				}
+			});		
+		});
+		$('#clickInfoBtn').unbind('click').click(function(){
+			new $.getJSP({
+				type:"open",
+				config:{
+					fromurl:"testLogin.html",
+					tourl:"InfCenter.jsp",
+					login_name:'1996100158'
+				}
+			});		
+		});
+		$('#clickPwdBtn').unbind('click').click(function(){
+			new $.getJSP({
+				type:"open",
+				config:{
+					fromurl:"testLogin.html",
+					tourl:"changePwd.jsp" ,
+					login_name:"1996100158",
+					user_name:"胡光永",
+				}
+			});		
+		});
+	});
+</script>

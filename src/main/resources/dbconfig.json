@@ -1,0 +1,23 @@
+[{
+	"conn_flag":"bs",
+	"conn_driver":"com.mysql.jdbc.Driver",
+	"conn_connstr":"jdbc:mysql://10.1.1.120:3306/baseservice?characterEncoding=utf8",
+	"conn_user":"qmuser",
+	"conn_pwd":"qmuser123!",
+	"conn_autoconnect":true,
+	"conn_poolsize":10,
+	"conn_type":"default",
+	"validationQuery":"SELECT 'x'",
+	"testWhileIdle":true
+},{
+	"conn_flag":"qm",
+	"conn_driver":"com.mysql.jdbc.Driver",
+	"conn_connstr":"jdbc:mysql://10.1.1.120:3306/qualitymonitor?characterEncoding=utf8",
+	"conn_user":"qmuser",
+	"conn_pwd":"qmuser123!",
+	"conn_autoconnect":true,
+	"conn_poolsize":10,
+	"conn_type":"common",
+	"validationQuery":"SELECT 'x'",
+	"testWhileIdle":true
+}]
